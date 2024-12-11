@@ -152,6 +152,10 @@ span.highlight {
     display: none; /* Hide sections by default */
 }
 
+.custom-list {
+  list-style: none;          /* Removes bullet points */
+}
+
 .navbar {
   background-color: #cadadb;
   overflow: hidden;
