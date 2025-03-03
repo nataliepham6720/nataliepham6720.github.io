@@ -1,27 +1,77 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Scribe Notes</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  </head>
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Prevent scrolling issues */
+        }
+
+        .navbar {
+            width: 100%;
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-list li {
+            margin: 0 15px;
+        }
+
+        .navbar-list a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 100%;
+            height: calc(100vh - 50px); /* Adjust height to account for navbar */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
     <nav class="navbar">
       <ul class="navbar-list">
         <li><a href="index.html">About</a></li>
         <li><a href="pubs.html">Publications</a></li>
         <li><a href="projects.html">Projects</a></li>
-	<li><a href="notes.html">Notes</a></li>
+        <li><a href="notes.html">Notes</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="volunteering.html">Volunteering</a></li>
       </ul>
     </nav>
 
     <div class="container">
-	<iframe src="https://nataliepham6720.notion.site/ebd/1a4685009d1080c5b918dabe420f0635?v=1a4685009d1081548ae8000c1ab834ed" 
-        width="100%" height="600" frameborder="0" allowfullscreen>
-	</iframe>
-   </div></table>
-  </body>
+        <iframe src="https://nataliepham6720.notion.site/ebd/1a4685009d1080c5b918dabe420f0635?v=1a4685009d1081548ae8000c1ab834ed" 
+                allowfullscreen></iframe>
+    </div>
+
+</body>
 </html>
+
